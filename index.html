@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Подарки Пермь — подарки и упаковка в ТЦ «Аймолл»</title>
+<meta name="description" content="Магазин подарков и отдел упаковки в ТЦ «Аймолл», Пермь, ул. Петропавловская, 73а, 1 этаж. Упаковка от 300 ₽ примерно за 5 минут. Ежедневно 10:00–22:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F1EA;--ink:#1E1B18;--muted:#4A4038;--soft:#6B5B4B;--line:#E2D6C6;--sand:#EFE6DA;--accent:#8C2F39;--accent-dark:#6E222B;--dark2:#2E2925;--gold:#C9A27E}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Golos Text',system-ui,sans-serif;line-height:1.5}
+a{color:var(--accent)}a:hover{color:var(--accent-dark)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.serif{font-family:'Playfair Display',Georgia,serif}
+em{font-style:italic;font-weight:500}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin:0}
+h1,h2{font-family:'Playfair Display',Georgia,serif;font-weight:600;margin:0;line-height:1.1}
+h1{font-size:clamp(38px,6vw,64px)}
+h2{font-size:clamp(30px,4.2vw,48px)}
+p{margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:12px;font-size:17px;font-weight:600;text-decoration:none}
+.btn svg{flex-shrink:0}
+.btn-accent{background:var(--accent);color:#fff}.btn-accent:hover{background:var(--accent-dark);color:#fff}
+.btn-outline{border:1.5px solid var(--ink);color:var(--ink)}.btn-outline:hover{background:var(--ink);color:var(--bg)}
+.btn-dark{background:var(--ink);color:var(--bg)}.btn-dark:hover{background:#000;color:var(--bg)}
+.btn-light{border:1.5px solid var(--bg);color:var(--bg)}.btn-light:hover{background:var(--bg);color:var(--ink)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px;gap:16px}
+.logo{font-family:'Playfair Display',Georgia,serif;font-size:24px;font-weight:600;color:var(--ink);text-decoration:none}
+.logo em{color:var(--accent)}
+nav{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:500}
+nav a.link{color:var(--ink);text-decoration:none}
+nav a.link:hover{color:var(--accent)}
+nav .btn{min-height:44px;padding:0 18px;font-size:15px;border-radius:10px}
+@media (max-width:760px){nav a.link{display:none}}
+
+.hero{padding:48px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero-text{display:flex;flex-direction:column;gap:22px}
+.hero h1 em{color:var(--accent)}
+.lead{font-size:19px;color:var(--muted);max-width:520px}
+.facts{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:0}
+.fact{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.fact:first-child{padding-top:0}.fact:last-child{border-bottom:0;padding-bottom:0}
+.fact span{color:var(--soft);font-size:15px}
+.fact b{font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:600;text-align:right}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:32px}.hero{padding:32px 0 40px}}
+
+.dark{background:var(--ink);color:var(--bg);padding:80px 0}
+.dark .kicker{color:var(--gold)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end}
+.two .stack{display:flex;flex-direction:column;gap:16px}
+.dark p.body{font-size:18px;color:#D9CFC2}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+.card{background:var(--dark2);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.card .t{font-size:13px;color:#BFB3A5}
+.card .v{font-size:22px;font-weight:600}
+.dark .row{display:flex;justify-content:flex-end;margin-top:28px}
+@media (max-width:860px){.two{grid-template-columns:1fr;gap:20px}.cards{grid-template-columns:1fr}.dark{padding:56px 0}.dark .row{justify-content:stretch}.dark .row .btn{width:100%}}
+
+.shop{padding:80px 0}
+.shop .two{align-items:start}
+.shop h2 em{color:var(--accent)}
+.goods{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.goods li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:16px;font-weight:500}
+@media (max-width:860px){.shop{padding:56px 0}}
+@media (max-width:420px){.goods{grid-template-columns:1fr}}
+
+.find{background:var(--sand);padding:80px 0}
+.find .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.find .stack{display:flex;flex-direction:column;gap:22px}
+.info{display:flex;flex-direction:column;gap:12px;font-size:17px}
+.info div{display:flex;gap:16px}
+.info dt,.info .k{font-weight:600;width:110px;flex-shrink:0}
+.map{width:100%;height:420px;border:0;border-radius:20px;background:#E0D4C4}
+@media (max-width:860px){.find .wrap{grid-template-columns:1fr;gap:28px}.find{padding:56px 0}.map{height:320px}.info .k{width:96px}}
+
+.contact{padding:72px 0}
+.contact .wrap{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.contact p{font-size:18px;color:var(--muted)}
+@media (max-width:600px){.contact .btns,.hero .btns,.find .btns{flex-direction:column;width:100%}.contact .btns .btn,.hero .btns .btn,.find .btns .btn{width:100%}}
+
+footer{border-top:1px solid var(--line);font-size:14px;color:var(--soft)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:24px;padding-bottom:24px}
+footer a{color:var(--soft)}
+footer .links{display:flex;gap:20px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a class="logo" href="./">Подарки <em>Пермь</em></a>
+<nav>
+<a class="link" href="#upakovka">Упаковка</a>
+<a class="link" href="#magazin">Магазин</a>
+<a class="link" href="#adres">Как найти</a>
+<a class="btn btn-accent" href="https://vk.me/butikpodarkov59">Написать нам</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="wrap">
+<div class="hero-text">
+<p class="kicker">ТЦ «Аймолл» · 1 этаж · Петропавловская, 73а</p>
+<h1>Подарки и&nbsp;красивая упаковка <em>в&nbsp;одном месте</em></h1>
+<p class="lead">Выберите подарок и&nbsp;упакуйте его прямо у&nbsp;нас — без поиска коробок и&nbsp;лент по&nbsp;всему городу.</p>
+<div class="btns">
+<a class="btn btn-accent" href="https://vk.me/butikpodarkov59"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Написать ВКонтакте</a>
+<a class="btn btn-outline" href="https://yandex.ru/maps/?text=%D0%9F%D0%B5%D1%80%D0%BC%D1%8C%20%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2073%D0%B0%20%D0%90%D0%B9%D0%BC%D0%BE%D0%BB%D0%BB"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Как добраться</a>
+</div>
+</div>
+<div class="facts" aria-label="Коротко о нас">
+<div class="fact"><span>Упаковка</span><b>от 300 ₽</b></div>
+<div class="fact"><span>Время упаковки</span><b>около 5 минут</b></div>
+<div class="fact"><span>Работаем</span><b>ежедневно 10–22</b></div>
+</div>
+</div>
+</section>
+
+<section class="dark" id="upakovka">
+<div class="wrap">
+<div class="two">
+<div class="stack">
+<p class="kicker">Отдел упаковки</p>
+<h2>Упаковка, которую <em>хочется сфотографировать</em></h2>
+</div>
+<p class="body">Упакуем любой подарок: быстро и&nbsp;аккуратно в&nbsp;стандартном оформлении или эксклюзивно — авторской упаковкой, которую больше нигде не&nbsp;найдёте.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="t">Стоимость</div><div class="v">от 300 ₽</div></div>
+<div class="card"><div class="t">Время</div><div class="v">около 5 минут</div></div>
+<div class="card"><div class="t">Варианты</div><div class="v">стандартная и&nbsp;авторская</div></div>
+</div>
+<div class="row"><a class="btn btn-light" href="https://vk.ru/butikpodarkov59">Смотреть работы во&nbsp;ВКонтакте</a></div>
+</div>
+</section>
+
+<section class="shop" id="magazin">
+<div class="wrap two">
+<div class="stack">
+<p class="kicker">Магазин подарков</p>
+<h2>Подарок найдётся <em>за&nbsp;пять минут</em></h2>
+<p style="font-size:18px;color:var(--muted)">Не&nbsp;знаете, что подарить? Подберём вместе и&nbsp;сразу красиво упакуем.</p>
+</div>
+<ul class="goods">
+<li>Мягкие игрушки</li>
+<li>Подарочные боксы люкс</li>
+<li>Брелоки</li>
+<li>Детские игрушки</li>
+<li>Магниты с&nbsp;видами города</li>
+<li>Сувениры о&nbsp;Перми</li>
+</ul>
+</div>
+</section>
+
+<section class="find" id="adres">
+<div class="wrap">
+<div class="stack">
+<p class="kicker">Как нас найти</p>
+<h2>ТЦ «Аймолл», 1&nbsp;этаж</h2>
+<div class="info">
+<div><span class="k">Адрес</span><span>Пермь, ул.&nbsp;Петропавловская, 73а</span></div>
+<div><span class="k">Ориентир</span><span>у&nbsp;эскалатора и&nbsp;лифта на&nbsp;парковку</span></div>
+<div><span class="k">Часы</span><span>ежедневно с&nbsp;10:00 до&nbsp;22:00</span></div>
+</div>
+<div class="btns">
+<a class="btn btn-dark" href="https://yandex.ru/maps/?text=%D0%9F%D0%B5%D1%80%D0%BC%D1%8C%20%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2073%D0%B0%20%D0%90%D0%B9%D0%BC%D0%BE%D0%BB%D0%BB"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Построить маршрут</a>
+</div>
+</div>
+<iframe class="map" title="ТЦ «Аймолл» на карте" loading="lazy" src="https://yandex.ru/map-widget/v1/?text=%D0%9F%D0%B5%D1%80%D0%BC%D1%8C%20%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2073%D0%B0%20%D0%90%D0%B9%D0%BC%D0%BE%D0%BB%D0%BB&amp;z=16"></iframe>
+</div>
+</section>
+
+<section class="contact">
+<div class="wrap">
+<h2>Связаться с&nbsp;нами</h2>
+<p>Пришлите фото подарка — подскажем, как его упаковать.</p>
+<div class="btns">
+<a class="btn btn-accent" href="https://vk.me/butikpodarkov59"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Написать ВКонтакте</a>
+<a class="btn btn-outline" href="https://vk.ru/butikpodarkov59">Наша группа ВКонтакте</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div>Подарки Пермь · ТЦ «Аймолл», ул.&nbsp;Петропавловская, 73а, 1&nbsp;этаж</div>
+<div class="links"><a href="https://vk.ru/butikpodarkov59">vk.ru/butikpodarkov59</a><a href="privacy.html">Политика конфиденциальности</a></div>
+</div>
+</footer>
+
+</body>
+</html>
